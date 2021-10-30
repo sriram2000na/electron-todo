@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+.hider {
+  opacity: 0;
+  max-height: 0px;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  /* padding-top: 0; */
+}
+.shower {
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 1s ease;
+  padding: 0.35rem 0.5rem;
+}
+.hidden {
+  display: none;
+}
+#main {
+  /* opacity: 0.9; */
+  border: 5px solid #424242b2;
+  background: #242424;
+  display: block;
+  width: 25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#main #list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+#main #list .ele:first-of-type {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#main #list .ele:last-of-type {
+  margin-bottom: 0.8rem;
+}
+#main #lead {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-top: 0.75rem;
+}
+#main #list .ele {
+  margin: 0.25rem;
+  display: flex;
+  float: none;
+  color: white;
+  background: #474747;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 90%;
+  flex-direction: column;
+  cursor: pointer;
+}
+#main #list .ele .short {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+#main #list .ele .timeremove {
+  padding: 0 0.75rem 0 0 !important;
+}
+
+#main #list .ele .text {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+#main #list .ele #content {
+  /* border: 1px solid red; */
+  /* padding: 0 0.5rem; */
+  background: #252525;
+  border-radius: 5px;
+  /* margin: 0.3rem; */
+}
+#main #list .ele #content .top {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  /* border: 1px solid grey; */
+  /* padding: 0.15rem; */
+}
