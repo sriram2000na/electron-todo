@@ -1,29 +1,29 @@
 {
-  "name": "electron-quick-start",
+  "name": "electrontemp-master",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "**Clone and run for a quick way to see Electron in action.**",
   "main": "main.js",
-  "scripts": {
-    "start": "electron ."
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^10.1.3"
-  },
   "dependencies": {
-    "electron": "^10.1.3",
-    "electron-reloader": "^1.0.1",
-    "libnotify-ffi": "^1.0.8",
-    "linux-notify": "^1.0.1",
-    "node-notifier": "^8.0.0"
-  }
+    "electron-reloader": "^1.2.1",
+    "linux-notify": "^1.1.0",
+    "node-notifier": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron": "^6.0.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sriram2000na/electron-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sriram2000na/electron-todo/issues"
+  },
+  "homepage": "https://github.com/sriram2000na/electron-todo#readme"
 }
