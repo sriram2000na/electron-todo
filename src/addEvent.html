@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <title>Add a TODO</title>
+    <link rel="stylesheet" href="addtodo.css">
   </head>
   <body>
-    <div>
-      <div className="inputField">
-        <input type="text" name="title" id="title" placeholder="title"/>
+    <div class="insides">
+      <div class="inputField">
+        <input type="text" name="title" id="title" placeholder="title" autofocus/>
         <input type="date" name="date" id="date">
         <input type="time" id="time">
       </div>
-      <div>
-      <textarea cols="50" row="10" id="message" placeholder="message"></textarea>
+      <div class="inputField">
+      <textarea cols="30" row="10" id="message" placeholder="message"></textarea>
       </div>
+      <div>
       <button id="btn" type="submit">Add note</button>
+      </div>
     </div>
   </body>
 

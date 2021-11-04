@@ -3,7 +3,10 @@ const fs = require("fs");
 let win;
 
 const submit = document.querySelector("#btn");
-
+document.addEventListener("DOMContentLoaded", (e) => {
+  // document.querySelector(".insides").style.height = "100vh";
+  // document.querySelector(".insides").style.width = "100vw";
+});
 submit.addEventListener("click", () => {
   win = remote.getCurrentWindow();
 

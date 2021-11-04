@@ -13,8 +13,8 @@ let todoTray = null;
 
 function createEventWindow() {
   eventWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 300,
+    // height: 150,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, "preload.js"),
@@ -22,8 +22,8 @@ function createEventWindow() {
     },
     show: false,
   });
-  mainWindow.setMenu(null);
-  eventWindow.setMenu(null);
+  // mainWindow.setMenu(null);
+  // eventWindow.setMenu(null);
   eventWindow.addListener("close", (e) => {
     eventWindow.hide();
     mainWindow.reload();
